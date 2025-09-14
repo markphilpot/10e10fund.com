@@ -8,8 +8,22 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-michroma-sans);
+
+  --animate-caret-blink: caret-blink 1.25s ease-out infinite;
+
+
+  @keyframes caret-blink {
+    0%,
+    70%,
+    100% {
+      opacity: 1;
+    }
+    20%,
+    50% {
+       opacity: 0;
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,3 +38,4 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
