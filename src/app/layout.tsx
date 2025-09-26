@@ -10,8 +10,8 @@ const michromaSans = Michroma({
 });
 
 export const metadata: Metadata = {
-  title: "10e10 fund",
-  description: "10e10 fund",
+  title: "10e10",
+  description: "10e10",
 };
 
 export default function RootLayout({
